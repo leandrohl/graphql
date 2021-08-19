@@ -1,13 +1,13 @@
 
 import './App.css'
-// import Dragon from './pages/Dragon'
+import Dragon from './pages/Dragon'
 import Users from './pages/Users'
 
 function App() {
 
   return (
     <div>
-        {/* <Dragon/> */}
+        <Dragon/>
         <Users/>
     </div>
   );

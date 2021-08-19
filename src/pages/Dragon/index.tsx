@@ -9,7 +9,7 @@ const Dragon: React.FC = () => {
   const [ getDragon, { loading: loadingDragon, data: dataDragon }] = useLazyQuery<DragonResponse, DragonRequest>(GET_DRAGON);
   
   return (
-    <div className="Container">
+    <div>
       <div className="App">
         {loading && <p>loading list...</p>}
         {error && <p>erro...</p>}

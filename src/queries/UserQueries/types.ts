@@ -1,20 +1,12 @@
-export class UserList {
+export class User {
   id = ''
   name = ''
-  rocket = ''
+  twitter = ''
 }
 
-export class User extends UserList {
-  type = ''
-  dry_mass_kg = 0
-  dry_mass_lb = 0
-  description = ''
-  crew_capacity = 0
-  active = true
-}
 export interface UserListResponse {
-  users: UserList[];
+  users: User[];
 }
-export interface UserListRequest {
+export interface UserNameRequest {
   nameUser: string;
 }
