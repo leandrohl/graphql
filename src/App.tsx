@@ -1,12 +1,14 @@
 
-import './App.css'
-import Dragon from './pages/Dragon'
+import './App.css';
+import Dragon from './pages/Dragon';
+import Mission from './pages/Mission';
 
 function App() {
 
   return (
     <div>
-        <Dragon/>
+      <Dragon />
+      <Mission />
     </div>
   );
 }
