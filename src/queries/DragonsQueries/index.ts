@@ -2,7 +2,6 @@ import { gql } from '@apollo/client';
 import { DragonsList, Dragon } from './types';
 import { convertKeys } from '../../utils';
 
-
 export const GET_DRAGONS = gql`
   query GetAllDragons {
     dragons {
