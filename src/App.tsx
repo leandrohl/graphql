@@ -1,14 +1,14 @@
 
-import './App.css';
-import Dragon from './pages/Dragon';
-import Mission from './pages/Mission';
+import './App.css'
+// import Dragon from './pages/Dragon'
+import Users from './pages/Users'
 
 function App() {
 
   return (
     <div>
       <Dragon />
-      <Mission />
+      <Users />
     </div>
   );
 }
