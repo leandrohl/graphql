@@ -6,8 +6,8 @@ import { DragonsListResponse, DragonResponse, DragonRequest } from '../../querie
 
 const Dragon: React.FC = () => {
   const { loading, error, data } = useQuery<DragonsListResponse>(GET_DRAGONS);
-  const [ getDragon, { loading: loadingDragon, data: dataDragon }] = useLazyQuery<DragonResponse, DragonRequest>(GET_DRAGON);
-  
+  const [getDragon, { loading: loadingDragon, data: dataDragon }] = useLazyQuery<DragonResponse, DragonRequest>(GET_DRAGON);
+
   return (
     <div>
       <div className="App">

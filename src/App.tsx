@@ -7,8 +7,8 @@ function App() {
 
   return (
     <div>
-        <Dragon/>
-        <Users/>
+      <Dragon />
+      <Users />
     </div>
   );
 }

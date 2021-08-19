@@ -5,5 +5,26 @@ export class MissionsList {
 
 export class Mission extends MissionsList {
     description = ''
-    twiter = ''
+    twitter = ''
+    manufacturers = ['']
+}
+
+export interface MissionsListResponse {
+    missions: MissionsList[];
+}
+
+export interface MissionResponse {
+    mission: Mission;
+}
+
+export interface MissionRequest {
+    missionId: string;
+}
+
+export interface MissionNameRequest {
+    name: string;
+}
+
+export interface MissionNameResponse {
+    missions: Mission[];
 }
