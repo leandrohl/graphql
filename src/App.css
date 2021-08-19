@@ -1,0 +1,14 @@
+.Container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  width: 458px;
+  @media (max-width: 458px) {
+    width: 100%;
+  }
+}
