@@ -16,13 +16,14 @@ const Users: React.FC = () => {
   return (
     <div>
       <h1>Users</h1>
-
       <div>
+        <label>Usuario: </label>
         <input
           value={search}
           onChange={(e) => {
             setSearch(e.target.value);
           }}
+          placeholder='Digite o nome do usuário'
         />
         <button onClick={() => getUsers({variables: {nameUser: search}})}>Pesquisar</button>
         {
@@ -42,7 +43,7 @@ const Users: React.FC = () => {
         }
       </div>
       <div>
-        <h1>Todos os usuarios encontrados</h1>
+        <h1>Lista com todos os usuarios encontrados</h1>
         {
           data &&
           <ul>
